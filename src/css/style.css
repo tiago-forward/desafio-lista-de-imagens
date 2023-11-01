@@ -4,9 +4,10 @@ html{
     font-family: 'Public Sans', sans-serif;
 }
 
+/*Para a largura completa do main ocupar 100% da tela com o min-height: 100vh*/
 main{
     display: flex;
-    min-height: 100vh; /*Para o largura completa do main ocupe 100% da tela com o min-height: 100vh*/
+    min-height: 100vh;
     justify-content: center;
 }
 
@@ -24,7 +25,8 @@ main{
     position: relative;
 }
 
-.pinturas .pintura img{ /*Caso venha uma imagem maior que o 335px, ela vai encaixar 100% de seu tamanho no elemento e a algura será configurada automaticamente*/
+/*Caso venha uma imagem maior que o 335px, ela vai encaixar 100% de seu tamanho no elemento e a algura será configurada automaticamente*/
+.pinturas .pintura img{ 
     width: 100%;
 }
 
