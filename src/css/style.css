@@ -1,29 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;700&display=swap');
 
+html{
+    font-family: 'Public Sans', sans-serif;
+}
+
 main{
     display: flex;
-    justify-content: space-evenly;
+    min-height: 100vh; /*Para o largura completa do main ocupe 100% da tela com o min-height: 100vh*/
+    justify-content: center;
+}
+
+.pinturas{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
     flex-wrap: wrap;
 }
 
-img{
-    display: flex;
-    justify-content: center;
-    width: auto;
-    height: auto;
-    max-height: 440px;
+.pinturas .pintura{
+    width: 335px;
+    height: 431px;
+    position: relative;
 }
 
-h2, p{
-    position: relative  ;
-    top: -100px;
+.pinturas .pintura img{ /*Caso venha uma imagem maior que o 335px, ela vai encaixar 100% de seu tamanho no elemento e a algura será configurada automaticamente*/
+    width: 100%;
+}
+
+.pinturas .pintura .informacoes{
+    position: absolute;
+    bottom: 40px;
     left: 20px;
     color: white;
 }
 
-p{
-    font-size: 14px;
+.pinturas .pintura .informacoes .titulo{
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.pinturas .pintura .informacoes .subtitulo{
+    font-size: 17px;
     font-weight: 300;
 }
